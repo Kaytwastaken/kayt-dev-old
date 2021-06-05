@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id              Int      @id @default(autoincrement())
+  title           String
+  content         String
+  tags            String[]
+  excerpt         String?
+  createdReadable String?
+  updatedReadable String?
+  createdAt       String?
+  updatedAt       String?
+  authorId        Int?
+  author          User?    @relation(fields: [authorId], references: [id])
+}
+
+model User {
+  id             Int       @id @default(autoincrement())
+  name           String?
+  email          String?   @unique
+  email_verified DateTime?
+  image          String?
+  created_at     DateTime  @default(now())
+  updated_at     DateTime
+  posts          Post[]
+
+  @@map("users")
+}
+
+model accounts {
+  id                   Int       @id @default(autoincrement())
+  compound_id          String    @unique
+  user_id              Int
+  provider_type        String
+  provider_id          String
+  provider_account_id  String
+  refresh_token        String?
+  access_token         String?
+  access_token_expires DateTime?
+  created_at           DateTime  @default(now())
+  updated_at           DateTime  @default(now())
+
+  @@index([provider_account_id], name: "providerAccountId")
+  @@index([provider_id], name: "providerId")
+  @@index([user_id], name: "userId")
+}
+
+model sessions {
+  id            Int      @id @default(autoincrement())
+  user_id       Int
+  expires       DateTime
+  session_token String   @unique
+  access_token  String   @unique
+  created_at    DateTime @default(now())
+  updated_at    DateTime @default(now())
+}
