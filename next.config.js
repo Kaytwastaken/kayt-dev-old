@@ -5,7 +5,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: 'Content-Security-Policy: default-src "self"'
+    value: "Content-Security-Policy: default-src 'self'"
   },
   {
     key: 'X-Frame-Options',
@@ -30,5 +30,9 @@ module.exports = {
         headers: securityHeaders,
       },
     ]
+  },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
   },
 }
