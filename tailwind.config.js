@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -30,6 +30,12 @@ module.exports = {
       colors: {
         "primary-gray": "var(--primary-gray)",
         "secondary-gray": "var(--secondary-gray)",
+        "dark-theme-red": "var(--dark-red)",
+        "dark-theme-blue": "var(--dark-blue)",
+        "dark-theme-brown": "var(--dark-brown)",
+        "dark-theme-beige": "var(--dark-beige)",
+        "dark-theme-offwhite": "var(--dark-offwhite)",
+        "dark-theme-bg": "var(--dark-bg)",
       },
     }
   },

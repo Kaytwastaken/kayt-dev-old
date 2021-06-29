@@ -32,8 +32,8 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
     <div onClick={() => Router.push("/blog/p/[id]", `/blog/p/${post.id}`)} className="card">
       <h3>{post.title}</h3>
       <hr />
-      <small>{post.tags.join(', ')}{dates}</small>
-      <div className="w-5/6"><ReactMarkdown children={post.excerpt ? post.excerpt + '...' : post.content.slice(0, 100)+'...'} /></div>
+      <small className="text-black">{post.tags.join(', ')}{dates}</small>
+      <div className="black-container w-5/6"><ReactMarkdown children={post.excerpt ? post.excerpt + '...' : post.content.slice(0, 100)+'...'} /></div>
     </div>
   );
 };

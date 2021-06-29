@@ -12,11 +12,16 @@
     src: url(../fonts/RisingSun-Regular.otf);
 }
 
-@tailwind utilities;
-
 :root {
     --primary-gray: rgb(243, 244, 246);
     --secondary-gray: rgb(229, 231, 235);
+    --dark-red: rgb(208, 59, 43);
+    --dark-red-hover: rgb(141, 43, 36);
+    --dark-blue: rgb(28, 58, 91);
+    --dark-brown: rgb(82, 50, 45);
+    --dark-beige: rgb(228, 206, 196);
+    --dark-offwhite: rgb(255, 237, 226);
+    --dark-bg: rgb(28,28,32);
 }
 
 /* 
@@ -26,38 +31,66 @@ gray-300: 209, 213, 219
 */
 
 
-/* html {
-    @apply bg-primary-gray
-} */
+html {
+    @apply bg-white dark:bg-dark-theme-bg
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--dark-brown);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--dark-blue);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--dark-red-hover);
+    }
+}
 
 * {
     font-size: 2vh;
     overflow-x: hidden;
     font-family: RisingSun, sans-serif;
+    color: black;
+    @apply dark:text-dark-theme-beige;
 }
 
 .card {
-    @apply items-center hover:bg-secondary-gray mx-4 mb-4 xl:mx-8 xl:mb-8 p-2 px-0 bg-primary-gray 
+    @apply items-center bg-primary-gray dark:bg-dark-theme-beige dark:hover:bg-blue-900 hover:bg-secondary-gray mx-4 mb-4 xl:mx-8 xl:mb-8 p-2 px-0 
 }
 
 .index-image {
     @apply w-16 md:w-20 mx-8 my-auto
 }
 
+.black-container > * {
+    @apply text-black
+}
+
 h1 {
-    @apply font-display leading-relaxed text-3xl sm:text-4xl sm:leading-normal text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 text-center
+    @apply font-display leading-relaxed text-3xl sm:text-4xl sm:leading-normal text-transparent dark:text-dark-theme-red bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 text-center
 }
 
 h2 {
-    @apply font-display leading-relaxed text-2xl sm:text-3xl sm:leading-relaxed text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 text-center
+    @apply font-display leading-relaxed text-2xl sm:text-3xl sm:leading-relaxed text-transparent dark:text-dark-theme-red bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 text-center
 }
 
 h3 {
-    @apply font-display leading-relaxed text-xl text-black sm:text-2xl text-center
+    @apply font-display leading-relaxed text-xl sm:text-2xl text-center dark:text-dark-theme-red
 }
 
 h4 {
-    @apply font-display leading-relaxed text-lg text-black sm:text-xl text-center
+    @apply font-display leading-relaxed text-lg sm:text-xl text-center dark:text-dark-theme-red
 }
 
 h5 {
@@ -73,11 +106,19 @@ p {
 }
 
 a {
-    @apply font-body text-base text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400
+    @apply font-body text-base text-center text-transparent dark:text-dark-theme-red dark:bg-dark-theme-red dark:bg-none bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400
+}
+
+li {
+    margin: .1rem 0 0 .5rem;
 }
 
 hr {
-    @apply border-solid border-2 w-5/6 bg-secondary-gray mx-auto
+    margin-left: auto;
+    margin-right: auto;
+    @apply border-solid border-2 border-secondary-gray dark:border-dark-theme-bg;
+    /* border: 2px var(--dark-bg) solid; */
+    width: 83.33%;
 }
 
 blockquote {

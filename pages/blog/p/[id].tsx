@@ -45,7 +45,7 @@ const Post: React.FC<PostProps> = (props) => {
             <div className="postContainer">
                 <h2>{props.title}</h2>
                 <hr />
-                <p className="small">Tags: {props.tags.join(', ')}</p>
+                <p className="small dark:bg-dark-theme-beige dark:p-2 dark:text-black">Tags: {props.tags.join(', ')}</p>
                 <div className="postContent">
                     <ReactMarkdown children={props.content} />
                 </div>
