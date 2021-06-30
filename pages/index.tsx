@@ -67,7 +67,30 @@ export default function Home() {
 							</Link>
 						</li>
 					</ul>
-					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto h-full beige-container">
+					
+					{/* Youtube Embed */}
+					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto">
+						<h3 className="font-body text-2xl text-dark-theme-beige mb-4">Latest YouTube upload</h3>
+						<iframe 
+							width="560"
+							height="315"
+							src="https://www.youtube-nocookie.com/embed/Ud_3j3do_NM"
+							title="YouTube video player"
+							frameBorder="0"
+							allow="
+								accelerometer;
+								autoplay;
+								clipboard-write;
+								encrypted-media;
+								gyroscope;
+								picture-in-picture
+							" 
+							allowFullScreen>
+							</iframe>
+					</div>
+
+					{/* About me */}
+					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto beige-container">
 						<h3 className="font-body text-2xl text-dark-theme-beige mt-2">About me</h3>
 						<h3 className="font-body text-dark-theme-beige">v</h3>
 
@@ -83,7 +106,6 @@ export default function Home() {
 							<ul className="mt-2">
 								<li>{"-"} Inconsistent capitalization my beloved</li>
 								<li>{"-"} inconsistent punctuation my also beloved.</li>
-								<li>{"-"} i basically quit twitter because i didnt like it</li>
 								<li>{"-"} sysadmin is my passion /hj</li>
 								<li>{"-"} i think fahrenheit is better for air temperatue but i use celcius anyway</li>
 								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>

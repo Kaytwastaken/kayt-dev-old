@@ -77,6 +77,11 @@ html {
     @apply text-black
 }
 
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1 {
     @apply font-display leading-relaxed text-3xl sm:text-4xl sm:leading-normal text-transparent dark:text-dark-theme-red bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400 text-center
 }
