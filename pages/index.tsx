@@ -104,14 +104,12 @@ export default function Home() {
 							<br />
 							If you want more than that though...
 							<ul className="mt-2">
-								<li>{"-"} Inconsistent capitalization my beloved</li>
-								<li>{"-"} inconsistent punctuation my also beloved.</li>
+								<li>{"-"} I cant be bothered to care about punctuation or capitalization rules most of them time</li>
 								<li>{"-"} sysadmin is my passion /hj</li>
 								<li>{"-"} i think fahrenheit is better for air temperatue but i use celcius anyway</li>
 								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>
 								<li>{"-"} minecraft youtube is my home</li>
-								<li>{"-"} ctrl+shift+z is better than ctrl+y</li>
-								<li>{"-"} she/they cause <b>L</b>ets <b>G</b>et <b>B</b>read <b>T</b>oday</li>
+								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
 							</ul>
 						</div>
 					</div>
