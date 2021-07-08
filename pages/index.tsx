@@ -101,6 +101,7 @@ export default function Home() {
 							probably seen above this section, this is the home to my blog and links to all my other things.
 							If you asked me to describe myself I really don't  know what I would say other than "a programmer who
 							barely codes", "an artist that barely draws", and "not a youtuber but sometimes i make videos with my friends"
+							
 							<br />
 							If you want more than that though...
 							<ul className="mt-2">
@@ -111,6 +112,17 @@ export default function Home() {
 								<li>{"-"} minecraft youtube is my home</li>
 								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
 								<li>{"-"} idc if its basic asf give me my ceasar salad and fuck off</li>
+							<br />
+							what languages do you know?
+							<ul>
+								<li>{"-"} i spent a year learning italian but i didnt retain very much of it</li>
+								<li>{"-"} i know useless little smidges of spanish, german, and japanese</li>
+								<li>{"-"} id like to learn asl, japanese, german, italian, spanish, and maybe russian in no particular order</li>
+								<li>{"-"} i imagine myself smashing all the bits of languages i know into my own "language"
+								(for some reason im particularly fond of the italian word noi for we, grammatical gender can eat my fist though)</li>
+								<li>{"-"} all my real programming experience is in js and ts</li>
+								<li>{"-"} id like to learn or at learn about go, C#, C++, java, and python, again in no particular order</li>
+							</ul>
 							</ul>
 						</div>
 					</div>
