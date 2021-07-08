@@ -69,7 +69,7 @@ export default function Home() {
 					</ul>
 					
 					{/* Youtube Embed */}
-					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto">
+					{/* <div className="w-4/5 lg:w-1/3 mt-24 mx-auto">
 						<h3 className="font-body text-2xl text-dark-theme-beige mb-4">Latest YouTube upload</h3>
 						<iframe 
 							width="560"
@@ -87,7 +87,7 @@ export default function Home() {
 							" 
 							allowFullScreen>
 							</iframe>
-					</div>
+					</div> */}
 
 					{/* About me */}
 					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto beige-container">
