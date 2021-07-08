@@ -114,6 +114,10 @@ a {
     @apply font-body text-base text-center text-transparent dark:text-dark-theme-red dark:bg-dark-theme-red dark:bg-none bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-400
 }
 
+ul {
+    margin-bottom: 1rem;
+}
+
 li {
     margin: .1rem 0 0 .5rem;
 }
