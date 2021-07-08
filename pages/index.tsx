@@ -121,7 +121,7 @@ export default function Home() {
 								<li>{"-"} i imagine myself smashing all the bits of languages i know into my own "language"
 								(for some reason im particularly fond of the italian word noi for we, grammatical gender can eat my fist though)</li>
 								<li>{"-"} all my real programming experience is in js and ts</li>
-								<li>{"-"} id like to learn or at learn about go, C#, C++, java, and python, again in no particular order</li>
+								<li>{"-"} id like to learn or at least learn about go, C#, C++, java, and python, again in no particular order</li>
 							</ul>
 							</ul>
 						</div>
