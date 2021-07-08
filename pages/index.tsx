@@ -117,7 +117,7 @@ export default function Home() {
 							<ul>
 								<li>{"-"} i spent a year learning italian but i didnt retain very much of it</li>
 								<li>{"-"} i know useless little smidges of spanish, german, and japanese</li>
-								<li>{"-"} id like to learn asl, japanese, german, italian, spanish, and maybe russian in no particular order</li>
+								<li>{"-"} id like to learn asl, japanese, german, italian, spanish, tagalog, indonesian, and maybe russian in no particular order</li>
 								<li>{"-"} i imagine myself smashing all the bits of languages i know into my own "language"
 								(for some reason im particularly fond of the italian word noi for we, grammatical gender can eat my fist though)</li>
 								<li>{"-"} all my real programming experience is in js and ts</li>
