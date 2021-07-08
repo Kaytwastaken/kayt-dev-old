@@ -110,9 +110,7 @@ export default function Home() {
 								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>
 								<li>{"-"} minecraft youtube is my home</li>
 								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
-								<li>{"-"} idc if its basic asf give me my ceasar salad (esp with chicken) and fuck off</li>
-								<li>{"-"} in a similar vein, give me my json and fuck off with your xml nonsense</li>
-								<li>{"-"} i think i basically understand what xml is but also i dont and my vague understanding of json feels slightly more familiar so i will continue to not use either of them until i actually need to</li>
+								<li>{"-"} idc if its basic asf give me my ceasar salad and fuck off</li>
 							</ul>
 						</div>
 					</div>
