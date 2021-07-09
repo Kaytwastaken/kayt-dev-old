@@ -36,14 +36,14 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
     if (i+1 < post.tags.length) {
       tagLinks.push(
         <span>
-          <a href={`http://localhost:3000/blog?tags=${tag}`} className="hover:underline">{tag}</a>
+          <a href={`https://kayt.dev/blog?tags=${tag}`} className="hover:underline">{tag}</a>
           <span>, </span>
         </span>
       )  
     } else {
       tagLinks.push(
         <span>
-          <a href={`http://localhost:3000/blog?tags=${tag}`} className="hover:underline">{tag}</a>
+          <a href={`https://kayt.dev/blog?tags=${tag}`} className="hover:underline">{tag}</a>
         </span>
       )
     }
