@@ -36,6 +36,7 @@ module.exports = {
         "dark-theme-beige": "var(--dark-beige)",
         "dark-theme-offwhite": "var(--dark-offwhite)",
         "dark-theme-bg": "var(--dark-bg)",
+        "light-theme-yellow": "var(--light-yellow)",
       },
     }
   },

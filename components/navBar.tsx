@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link'
 
 // mx-8 lg:mx-16
-export default function NavBar({blog=false}) {
+export default function NavBar({blog=false}, {tags=false}) {
     return <div className="flex content-center bg-primary-gray dark:bg-dark-theme-brown">
         <div className="ml-4 xl:ml-8">
             <Link href="/">
@@ -14,6 +14,14 @@ export default function NavBar({blog=false}) {
                 blog? 
                 (
                     <Link href="/blog"><a><h3 className="font-body">Blog</h3></a></Link>
+                ) : ''
+            }
+        </div>
+        <div className="ml-4 xl:ml-8 my-auto">
+            {
+                tags? 
+                (
+                    <Link href="/blog"><a><h3 className="font-body">Clear tags</h3></a></Link>
                 ) : ''
             }
         </div>

@@ -5,6 +5,7 @@ import NavBar from '../../../components/navBar'
 import prisma from '../../../lib/prisma'
 import { PostProps } from '../../../components/Post'
 import Head from 'next/head'
+import gfm from 'remark-gfm'
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     const post = await prisma.post.findUnique({
@@ -29,7 +30,36 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     }
 }
 
+
 const Post: React.FC<PostProps> = (props) => {
+    const createdAt = props.createdReadable ? props.createdReadable : ''
+    const updatedAt = props.updatedReadable ? props.updatedReadable : ''
+    let dates
+    if (createdAt != '') {
+        dates = createdAt
+        if (updatedAt != '') {
+            dates = createdAt + ", updated " + updatedAt
+        }
+    }
+    
+    let tagLinks = []
+    for (let i = 0; i < props.tags.length; i++) {
+        const tag = props.tags[i];
+        if (i+1 < props.tags.length) {
+            tagLinks.push(
+                <span>
+                    <a href={`http://localhost:3000/blog?tags=${tag}`} className="hover:underline">{tag}</a>
+                    <span>, </span>
+                </span>
+            )   
+        } else {
+            tagLinks.push(
+                <span>
+                    <a href={`http://localhost:3000/blog?tags=${tag}`} className="hover:underline">{tag}</a>
+                </span>
+            )
+        }
+    }
     return (
         <div>
             <Head>
@@ -47,9 +77,9 @@ const Post: React.FC<PostProps> = (props) => {
             <div className="postContainer">
                 <h2>{props.title}</h2>
                 <hr />
-                <p className="small dark:bg-dark-theme-beige dark:p-2 dark:text-black">Tags: {props.tags.join(', ')}</p>
+                <p className="dark:bg-dark-theme-beige dark:p-2 dark:text-black">Tags: {tagLinks} | {dates}</p>
                 <div className="postContent">
-                    <ReactMarkdown children={props.content} />
+                    <ReactMarkdown plugins={[gfm]} children={props.content} />
                 </div>
             </div>
         </div>

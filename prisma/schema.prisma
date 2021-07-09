@@ -19,6 +19,7 @@ model Post {
   updatedAt       String?
   authorId        Int?
   author          User?    @relation(fields: [authorId], references: [id])
+  featured        Boolean?
 }
 
 model User {
