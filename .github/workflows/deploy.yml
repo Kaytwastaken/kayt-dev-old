@@ -1,0 +1,24 @@
+# Using garygrossgarten/github-action-ssh, connect to Neuromancer as node and run the deploy.sh script
+
+name: Remote deploy via SSH
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: deploy.sh via SSH to NEUROMANCER
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          username: node
+          host: ${{ secrets.NEUROMANCER }}
+          privateKey: ${{ secrets.NEUROMANCER_KEY }}
+          passphrase: ${{ secrets.NEUROMANCER_PASSPHRASE }}
+          command: cd kayt-dev && ./deploy.sh
+        env:
+          CI: true
