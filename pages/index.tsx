@@ -111,7 +111,7 @@ export default function Home() {
 								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>
 								<li>{"-"} minecraft youtube is my home</li>
 								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
-								<li>{"-"} idc if its basic give me my ceasar salad and leave</li>
+								<li>{"-"} idc if its basic give me my salad and leave</li
 							<br />
 							what languages do you know?
 							<ul>
