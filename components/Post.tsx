@@ -2,6 +2,8 @@ import React from "react";
 import Router from "next/router";
 import ReactMarkdown from "react-markdown";
 import gfm from 'remark-gfm';
+import rhtml from 'rehype-raw'
+import rhsan from 'rehype-sanitize'
 
 export type PostProps = {
   id: number;
@@ -54,7 +56,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
       <h3 onClick={() => Router.push("/blog/p/[id]", `/blog/p/${post.id}`)} className="cursor-pointer mx-4 hover:underline">{post.title}</h3>
       <hr />
       <small className="text-black">{tagLinks} | {dates}</small>
-      <div className="mx-auto black-container w-5/6"><ReactMarkdown remarkPlugins={[gfm]} children={post.excerpt ? post.excerpt + '...' : post.content.slice(0, 100)+'...'} /></div>
+      <div className="mx-auto black-container w-5/6"><ReactMarkdown remarkPlugins={[gfm]} rehypePlugins={[rhtml, rhsan]} children={post.excerpt ? post.excerpt + '...' : post.content.slice(0, 100)+'...'} /></div>
     </div>
   );
 };

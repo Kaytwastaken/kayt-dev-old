@@ -100,7 +100,7 @@ h3 {
 }
 
 h4 {
-    @apply font-display leading-relaxed text-lg sm:text-xl text-center dark:text-dark-theme-red
+    @apply font-display leading-relaxed text-lg sm:text-xl w-5/6 mx-auto dark:text-dark-theme-red
 }
 
 h5 {
@@ -142,13 +142,22 @@ blockquote > p {
 }
 
 .postContainer {
-    @apply mt-4 w-3/4 sm:w-3/5 md:w-1/2 lg:w-3/5 xl:w-1/2 mx-auto mb-12
+    @apply mt-4 w-11/12 sm:w-4/5 md:w-1/2 lg:w-3/5 xl:w-1/2 mx-auto mb-12
 }
 
 .postContent {
     @apply mx-auto mt-4
 }
 
+.twitter-tweet {
+    margin: 0 auto 2rem auto !important; 
+}
+
 p > img {
-	@apply w-5/6
+	@apply w-5/6 mx-auto
+}
+
+blockquote > ol > li {
+    margin: .25rem auto .25rem 1.5rem;
+    list-style: circle;
 }

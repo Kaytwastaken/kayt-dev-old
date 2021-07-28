@@ -6,6 +6,8 @@ import prisma from '../../../lib/prisma'
 import { PostProps } from '../../../components/Post'
 import Head from 'next/head'
 import gfm from 'remark-gfm'
+import rhtml from 'rehype-raw'
+import rhsan from 'rehype-sanitize'
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     const post = await prisma.post.findUnique({
@@ -79,7 +81,7 @@ const Post: React.FC<PostProps> = (props) => {
                 <hr />
                 <p className="dark:bg-dark-theme-beige dark:p-2 dark:text-black">Tags: {tagLinks} | {dates}</p>
                 <div className="postContent">
-                    <ReactMarkdown plugins={[gfm]} children={props.content} />
+                    <ReactMarkdown remarkPlugins={[gfm]} rehypePlugins={[rhtml]} children={props.content} />
                 </div>
             </div>
         </div>
