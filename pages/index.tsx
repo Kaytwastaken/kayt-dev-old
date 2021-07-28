@@ -111,17 +111,16 @@ export default function Home() {
 								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>
 								<li>{"-"} minecraft youtube is my home</li>
 								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
-								<li>{"-"} idc if its basic asf give me my ceasar salad and fuck off</li>
 							<br />
 							what languages do you know?
 							<ul>
 								<li>{"-"} i spent a year learning italian but i didnt retain very much of it</li>
-								<li>{"-"} i know useless little smidges of spanish, german, and japanese</li>
-								<li>{"-"} id like to learn asl, japanese, german, italian, spanish, and maybe russian, tagalog, and indonesian in no particular order</li>
+								<li>{"-"} i know useless little smidges of spanish, german, and japanese, but i am currently learning Japanese (albeit on Duolingo which is not the best option, but it's something)</li>
+								<li>{"-"} id like to learn asl, dutch, italian, spanish, and maybe tagalog and indonesian in no particular order</li>
 								<li>{"-"} i imagine myself smashing all the bits of languages i know into my own "language"
 								(for some reason im particularly fond of the italian word noi for we, grammatical gender can eat my fist though)</li>
 								<li>{"-"} all my real programming experience is in js and ts</li>
-								<li>{"-"} id like to learn or at least learn about go, C#, C++, java, and python, again in no particular order</li>
+								<li>{"-"} id like to learn or at least learn about go, C#, C++, java, python, and rust, again in no particular order</li>
 							</ul>
 							</ul>
 						</div>
