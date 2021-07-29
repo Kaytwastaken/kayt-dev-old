@@ -61,11 +61,11 @@ export default function Home() {
 				</div>
 				<div className="">
 					<ul className="flex justify-center text-center mt-8">
-						<li className="card">
-							<Link href="/blog">
+						<Link href="/blog">
+							<li className="card">
 								<h3 className="w-32 mx-4 font-body text-2xl text-black">Blog</h3>
-							</Link>
-						</li>
+							</li>
+						</Link>
 					</ul>
 					
 					{/* Youtube Embed */}
