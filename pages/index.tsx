@@ -13,7 +13,7 @@ export default function Home() {
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<link rel="manifest" href="/site.webmanifest" />
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-				<meta name="description" content="Homepage for kayt_was_taken developer" />
+				<meta name="description" content="the place for all my things" />
 				<meta name="author" content="kayt_was_taken" />
 				<meta name="keywords" content="Kayt, dev, kayt_was_taken"/>
 			</Head>
