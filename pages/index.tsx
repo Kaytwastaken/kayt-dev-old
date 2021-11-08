@@ -28,9 +28,9 @@ export default function Home() {
 							<a href="https://kayt-was-taken.tumblr.com/"><Image src="/icos/tumblr-3-64.png" alt="Tumblr logo" width="64" height="64"/></a>
 						</li>
 						{/* Youtube */}
-						<li className="index-image"> 
+						{/* <li className="index-image"> 
 							<a href="https://www.youtube.com/channel/UCb6ZkG3s5pNIl6OMoKk5Hmg"><Image src="/icos/yt_icon_mono_light.png" alt="YouTube logo" width="90" height="64"/></a>
-						</li>
+						</li> */}
 						{/* Insta */}
 						<li className="index-image"> 
 							<a href="https://www.instagram.com/kayt_was_taken"><Image src="/icos/InstagramLogoBlack.png" alt="Instagram logo" width="64" height="64"/></a>
@@ -46,9 +46,9 @@ export default function Home() {
 							<a href="https://kayt-was-taken.tumblr.com/"><Image src="/icos/tumblr-3-64_dark.png" alt="Tumblr logo" width="64" height="64"/></a>
 						</li>
 						{/* Youtube */}
-						<li className="index-image"> 
+						{/* <li className="index-image"> 
 							<a href="https://www.youtube.com/channel/UCb6ZkG3s5pNIl6OMoKk5Hmg"><Image src="/icos/yt_icon_mono_light_dark.png" alt="YouTube logo" width="90" height="64"/></a>
-						</li>
+						</li> */}
 						{/* Insta */}
 						<li className="index-image"> 
 							<a href="https://www.instagram.com/kayt_was_taken"><Image src="/icos/InstagramLogoBlack_dark.png" alt="Instagram logo" width="64" height="64"/></a>
@@ -67,27 +67,6 @@ export default function Home() {
 							</li>
 						</Link>
 					</ul>
-					
-					{/* Youtube Embed */}
-					{/* <div className="w-4/5 lg:w-1/3 mt-24 mx-auto">
-						<h3 className="font-body text-2xl text-dark-theme-beige mb-4">Latest YouTube upload</h3>
-						<iframe 
-							width="560"
-							height="315"
-							src="https://www.youtube-nocookie.com/embed/Ud_3j3do_NM"
-							title="YouTube video player"
-							frameBorder="0"
-							allow="
-								accelerometer;
-								autoplay;
-								clipboard-write;
-								encrypted-media;
-								gyroscope;
-								picture-in-picture
-							" 
-							allowFullScreen>
-							</iframe>
-					</div> */}
 
 					{/* About me */}
 					<div className="w-4/5 lg:w-1/3 mt-24 mx-auto beige-container">
@@ -99,29 +78,33 @@ export default function Home() {
 							<div className="mt-2 float-left mr-4 hidden dark:block"><Image src="/icos/brown_blue_picrew.png" alt="profile picture of female cartoon character with brown hair, dark red wings, dark brown and beige clothes, in front of a circular blue background" width="128" height="128"></Image></div>
 							Hi! I'm kayt! I do stuff sometimes and that's about it. As you've
 							probably seen above this section, this is the home to my blog and links to all my other things.
-							If you asked me to describe myself I really don't  know what I would say other than "a programmer who
-							barely codes", "an artist that barely draws", and "not a youtuber but sometimes i make videos with my friends"
+							If you asked me to describe myself I really don't know what I would say other than
+							"an artist that barely draws" and "a programmer who barely codes"
 							
 							<br />
 							If you want more than that though...
 							<ul className="mt-2">
-								<li>{"-"} I cant be bothered to care about punctuation or capitalization rules most of them time</li>
 								<li>{"-"} sysadmin is my passion /hj</li>
 								<li>{"-"} i think fahrenheit is better for air temperatue but i use celcius anyway</li>
-								<li>{"-"} i have a bunch of earrings but i never wear them because i like the purple ones i keep in my ears</li>
-								<li>{"-"} minecraft youtube is my home</li>
 								<li>{"-"} i strongly believe ctrl+shift+z is better than ctrl+y</li>
+							</ul>
 							<br />
 							what languages do you know?
-							<ul>
-								<li>{"-"} i spent a year learning italian but i didnt retain very much of it</li>
-								<li>{"-"} i know useless little smidges of spanish, german, and japanese, but i am currently learning Japanese (albeit on Duolingo which is not the best option, but it's something)</li>
-								<li>{"-"} id like to learn asl, dutch, italian, spanish, and maybe tagalog and indonesian in no particular order</li>
-								<li>{"-"} i imagine myself smashing all the bits of languages i know into my own "language"
+							<ul className="mt-2">
+								<li>{"-"} i work primarily in TS and python</li>
+								<li>{"-"} though id like to learn or at least learn about go, C++, and kotlin in no particular order</li>
+								<li>{"-"} as for human languages, i spent a year learning italian but i didnt retain any of it</li>
+								<li>{"-"} i know useless little smidges of spanish, german, and japanese</li>
+								<li>{"-"} id like to learn asl, dutch, italian, spanish, and maybe tagalog and indonesian, again, in no particular order</li>
+								<li>{"-"} i imagine myself eventually smashing all the bits of languages i know into my own mess of a conlang
 								(for some reason im particularly fond of the italian word noi for we, grammatical gender can eat my fist though)</li>
-								<li>{"-"} all my real programming experience is in js and ts</li>
-								<li>{"-"} id like to learn or at least learn about go, C#, C++, java, python, and rust, again in no particular order</li>
 							</ul>
+							<br />
+							what projects are you working on?
+							<ul className="mt-2">
+								<li>{"-"} too many</li>
+								<li>{"-"} i have a lot of ideas for website updates, discord bots, minecraft mods, games, etc</li>
+								<li>{"-"} b u t, as for current projects, right now I'm working on a python game engine for text-based games</li>
 							</ul>
 						</div>
 					</div>
